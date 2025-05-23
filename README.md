@@ -10,7 +10,7 @@ Fix for blurry DOF and fog in Clair Obscur: Expedition 33
 
 5. Paste the Engine.ini file into the ``C:\User\LOCAL\APPDATA\Sandfall\Saved\Config\Windows`` on Linux into ``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows``
 
-6. Check your GameUserSettings.ini file and Copy\Paste  everything into Engine.ini file after the lines below.
+6. Check your GameUserSettings.ini file and Copy\Paste  everything into Engine.ini file after the lines below, excluding the ``[ScalabilityGroups]`` section.
 
 * [ScalabilityGroups]
 * sg.ResolutionQuality=100
