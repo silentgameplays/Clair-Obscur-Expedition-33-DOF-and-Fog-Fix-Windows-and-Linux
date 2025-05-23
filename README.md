@@ -38,7 +38,35 @@ Fix for blurry DOF and fog in Clair Obscur: Expedition 33
 
 7. Windows: save your Engine.ini file as read only on Windows.
 8. Linux: type ``cd`` paste the path to your ``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows`` location
+
 * ``sudo su``
+* ``chattr +i Engine.ini``
+
+9. ``[Scalability Groups]`` settings can be modified  by changing the in-game settings and then copy/pasting that section into your Engine.ini from your GameUserSettings.ini file after making it editable and then making it read-only again.
+
+
+# Alternative way without downloading Engine.ini from randoms repo.
+
+1.Open your  GameUserSettings.ini file on Windows  located in  ``C:\User\LOCAL\APPDATA\Sandfall\Saved\Config\Windows`` on Linux the file will be located in ``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows``
+
+2. Add these lines after the end of  ``[ScalabilityGroups]`` section
+
+* [SystemSettings]
+* r.DepthOfFieldQuality=0
+* r.fog=0
+* r.VolumetricFog=0
+
+* [/script/engine.renderersettings]
+* r.ViewDistanceScale=5
+* r.SkeletalMeshLODBias=-2
+* r.StaticMeshLODDistanceScale=0.25
+
+3. Save the file as ``Engine.ini``
+
+4. Make it read only on Windows by point and clicking on Linux by running inside the ``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows`` location
+
+* ``sudo su``
+
 * ``chattr +i Engine.ini``
 
 Enjoy unblurred visuals on your OS of choice.
