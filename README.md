@@ -14,18 +14,19 @@
 
 # Motion Blur
 
-#NB! For a clear picture before applying this fix and use TSR at 100% or 75%, it will still lag heavily in one area called Yellow Harvest, everywhere else should be fine with 100/75 % TSR
+# NB! For a clear picture before applying this fix and use TSR at 100% or 75%, it will still lag heavily in one area called Yellow Harvest, everywhere else should be fine with 100/75 % TSR
 
 4. On Windows go into your
 ``C:\User\LOCAL\APPDATA\Sandfall\Saved\Config\Windows``
 
 
 5. On Linux it will be
-`` /steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows ``
+``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows``
 
 6. Open your GameUserSettings.ini file and copy\paste the code below into GameUserSettings.ini file after the ``[ScalabilityGroups]`` section and before your settings:
 
-```[SystemSettings]
+```
+[SystemSettings]
 r.DepthOfFieldQuality=0
 r.fog=0
 r.VolumetricFog=0
@@ -33,16 +34,18 @@ r.VolumetricFog=0
 [/script/engine.renderersettings]
 r.ViewDistanceScale=5
 r.SkeletalMeshLODBias=-2
-r.StaticMeshLODDistanceScale=0.25```
+r.StaticMeshLODDistanceScale=0.25
+
+```
 
 
 7. On Windows: save your modified GameUserSettings.ini as Engine.ini file and make it as Read Only by right clicking on Properties.
 
 8. Linux: save your modified GameUserSettings.ini as Engine.ini file. To make it read-only type
 * ``cd`` 
-# paste the path to your
+
+# paste the path to your location
 ``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows``
-location
 
 * ``sudo su ``
 
@@ -50,4 +53,9 @@ location
 
 
 # Example of what your newly created Engine.ini should look like on top:
+
+![engineini](https://github.com/user-attachments/assets/faf9ef2d-1fd6-4328-be38-8a659a53e7a8)
+
+Enjoy unblurred visuals in Clair Obscur: Expedition 33
+#silentgameplays.
 
