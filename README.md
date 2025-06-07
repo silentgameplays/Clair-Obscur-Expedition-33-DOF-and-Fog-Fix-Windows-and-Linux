@@ -25,7 +25,7 @@
 
 6. Open your GameUserSettings.ini file and copy\paste the code below into GameUserSettings.ini file after the ``[ScalabilityGroups]`` section and before your settings:
 
-``[SystemSettings]
+```[SystemSettings]
 r.DepthOfFieldQuality=0
 r.fog=0
 r.VolumetricFog=0
@@ -33,7 +33,7 @@ r.VolumetricFog=0
 [/script/engine.renderersettings]
 r.ViewDistanceScale=5
 r.SkeletalMeshLODBias=-2
-r.StaticMeshLODDistanceScale=0.25``
+r.StaticMeshLODDistanceScale=0.25```
 
 
 7. On Windows: save your modified GameUserSettings.ini as Engine.ini file and make it as Read Only by right clicking on Properties.
