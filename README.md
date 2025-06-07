@@ -23,7 +23,7 @@
 5. On Linux it will be
 ``/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/Config/Windows``
 
-6. Open your GameUserSettings.ini file and copy\paste the code below into GameUserSettings.ini file after the ``[ScalabilityGroups]`` section and before your settings:
+6. Open your ``GameUserSettings.ini`` file and copy\paste the code below into ``GameUserSettings.ini`` file after the ``[ScalabilityGroups]`` section and before your settings:
 
 ```
 [SystemSettings]
@@ -39,9 +39,9 @@ r.StaticMeshLODDistanceScale=0.25
 ```
 
 
-7. On Windows: save your modified GameUserSettings.ini as Engine.ini file and make it as Read Only by right clicking on Properties.
+7. On Windows: save your modified ``GameUserSettings.ini`` as ``Engine.ini`` file and make it as Read Only by right clicking on Properties.
 
-8. Linux: save your modified GameUserSettings.ini as Engine.ini file. To make it read-only type
+8. Linux: save your modified ``GameUserSettings.ini`` as ``Engine.ini`` file. To make it read-only type
 * ``cd`` 
 
 # paste the path to your location
